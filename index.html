@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Geografía</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Quiz de la carrera de Geografía</h1>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <p>Este quiz pondrá a prueba tus conocimientos sobre la carrera de Geografía. ¡Prepárate chango!</p>
+            <button onclick="startQuiz()">Comenzar Quiz</button>
+        </section>
+
+        <section id="quiz" style="display:none;">
+            <h2 id="question-title"></h2>
+            <div id="choices"></div>
+            <button onclick="nextQuestion()">Siguiente Pregunta</button>
+        </section>
+        
+        <section id="results" style="display:none;">
+            <h2>Resultados</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Reiniciar Quiz</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por [joel y valeria]</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
